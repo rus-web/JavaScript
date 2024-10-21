@@ -1,11 +1,11 @@
 
 
-var userName = [
+let userName = [
     userRuslan = {
-        firstName: '1',
-        LastName: '1',
-        age: 1,
-        amountCash: 1,
+        firstName: 'Ruslan',
+        LastName: 'Tinaev',
+        age: 24,
+        amountCash: 15800,
     },
     userArtem = {
         firstName: 'Artem',
@@ -15,10 +15,10 @@ var userName = [
     }
 ]
 
-var request = prompt('What is your name?')
-var request2 = prompt('What is our surname')
-var request3 = +prompt('How old are you?')
-var request4 = +prompt("Specify the amount?")
+let request = prompt('What is your name?')
+let request2 = prompt('What is our surname')
+let request3 = +prompt('How old are you?')
+let request4 = +prompt("Specify the amount?")
 
 if (request === userRuslan.firstName && 
     request2 === userRuslan.LastName && 
@@ -26,7 +26,7 @@ if (request === userRuslan.firstName &&
     request4 <= userRuslan.amountCash
 )
     {
-    const isUser1Ready = confirm("Do you want to withdraw " + request4 + " RUB")
+    let isUser1Ready = confirm("Do you want to withdraw " + request4 + " RUB?")
     console.log('Cash ready Ruslan')
 } else if (
     request === userArtem.firstName && 
@@ -34,7 +34,7 @@ if (request === userRuslan.firstName &&
     request3 === userArtem.age && 
     request4 <= userArtem.amountCash
 ){
-    const isUser2Ready = confirm("Do you want to withdraw " + request4 + " RUB")
+    let isUser2Ready = confirm("Do you want to withdraw " + request4 + " RUB?")
     console.log('Cash ready Artem')
 } else {
     console.log('Eror')

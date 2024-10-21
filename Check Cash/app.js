@@ -2,10 +2,10 @@
 
 var userName = [
     userRuslan = {
-        firstName: 'Ruslan',
-        LastName: 'Tinaev',
-        age: 24,
-        amountCash: 18000,
+        firstName: '1',
+        LastName: '1',
+        age: 1,
+        amountCash: 1,
     },
     userArtem = {
         firstName: 'Artem',
@@ -26,14 +26,18 @@ if (request === userRuslan.firstName &&
     request4 <= userRuslan.amountCash
 )
     {
-    console.log("Cash ready Ruslan")
+    const isUser1Ready = confirm("Do you want to withdraw " + request4 + " RUB")
+    console.log('Cash ready Ruslan')
 } else if (
     request === userArtem.firstName && 
     request2 === userArtem.LastName && 
     request3 === userArtem.age && 
     request4 <= userArtem.amountCash
 ){
+    const isUser2Ready = confirm("Do you want to withdraw " + request4 + " RUB")
     console.log('Cash ready Artem')
 } else {
     console.log('Eror')
 }
+
+
